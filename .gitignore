@@ -1,3 +1,6 @@
+# MAC files
+.DS_Store
+
 # Ignore list for KiCAD Projects
 # Temporary files
 *.000
