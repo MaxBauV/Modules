@@ -92,7 +92,7 @@
 
   (footprint "1_Jacks:3.5mm_thonkiconn" (layer "F.Cu")
     (tstamp 2633c892-50e3-4cf7-828f-1b7becc0752a)
-    (at 6.35 95.8)
+    (at 6.35 96.064)
     (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.1)))
       (tstamp fffe084e-faa1-49c4-acf9-39a35d1b5218)
@@ -119,7 +119,7 @@
 
   (footprint "1_Jacks:3.5mm_thonkiconn" (layer "F.Cu")
     (tstamp 34058be5-3d44-4c12-8b27-1fd1fb99dada)
-    (at -6.35 95.8)
+    (at -6.35 96.064)
     (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.1)))
       (tstamp 42906893-32e6-4753-94fd-7dfac4a1a93a)
@@ -252,7 +252,7 @@
 
   (footprint "1_Jacks:3.5mm_thonkiconn" (layer "F.Cu")
     (tstamp c269f31c-8e10-4715-a0a7-b766a8c49a69)
-    (at -6.35 108.5)
+    (at -6.35 110.998)
     (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.1)))
       (tstamp cadf3465-b7b8-4aba-998d-454c6911d769)
@@ -279,7 +279,7 @@
 
   (footprint "1_Jacks:3.5mm_thonkiconn" (layer "F.Cu")
     (tstamp c88028dd-72b9-4faf-bc42-ccfb8093ed5b)
-    (at 6.35 108.5)
+    (at 6.35 110.998)
     (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.1)))
       (tstamp 03981183-9164-403a-90b7-4a75b33ad202)

@@ -228,11 +228,11 @@
         )
       )
     )
-    (symbol "Connector:AudioJack2" (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0 8.89 0)
+    (symbol "Connector_Generic:Conn_01x06" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 7.62 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "AudioJack2" (at 0 6.35 0)
+      (property "Value" "Conn_01x06" (at 0 -10.16 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -241,54 +241,67 @@
       (property "Datasheet" "~" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "audio jack receptacle mono phone headphone TS connector" (at 0 0 0)
+      (property "ki_keywords" "connector" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Audio Jack, 2 Poles (Mono / TS)" (at 0 0 0)
+      (property "ki_description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Jack*" (at 0 0 0)
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "AudioJack2_0_1"
-        (rectangle (start -3.81 0) (end -2.54 -2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type outline))
+      (symbol "Conn_01x06_1_1"
+        (rectangle (start -1.27 -7.493) (end 0 -7.747)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
         )
-        (rectangle (start -2.54 3.81) (end 2.54 -2.54)
+        (rectangle (start -1.27 -4.953) (end 0 -5.207)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 -2.413) (end 0 -2.667)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 0.127) (end 0 -0.127)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 2.667) (end 0 2.413)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 5.207) (end 0 4.953)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -1.27 6.35) (end 1.27 -8.89)
           (stroke (width 0.254) (type default))
           (fill (type background))
         )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0.635 -0.635)
-            (xy 1.27 0)
-            (xy 2.54 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
+        (pin passive line (at -5.08 5.08 0) (length 3.81)
+          (name "Pin_1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
         )
-        (polyline
-          (pts
-            (xy 2.54 2.54)
-            (xy -0.635 2.54)
-            (xy -0.635 0)
-            (xy -1.27 -0.635)
-            (xy -1.905 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
+        (pin passive line (at -5.08 2.54 0) (length 3.81)
+          (name "Pin_2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
         )
-      )
-      (symbol "AudioJack2_1_1"
-        (pin passive line (at 5.08 2.54 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "S" (effects (font (size 1.27 1.27))))
+        (pin passive line (at -5.08 0 0) (length 3.81)
+          (name "Pin_3" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 5.08 0 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "T" (effects (font (size 1.27 1.27))))
+        (pin passive line (at -5.08 -2.54 0) (length 3.81)
+          (name "Pin_4" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -5.08 0) (length 3.81)
+          (name "Pin_5" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -7.62 0) (length 3.81)
+          (name "Pin_6" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -401,115 +414,6 @@
         )
       )
     )
-    (symbol "Connector_Generic:Conn_02x05_Odd_Even" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 1.27 7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_02x05_Odd_Even" (at 1.27 -7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "connector" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Connector*:*_2x??_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_02x05_Odd_Even_1_1"
-        (rectangle (start -1.27 -4.953) (end 0 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 -2.413) (end 0 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 0.127) (end 0 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 2.667) (end 0 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 5.207) (end 0 4.953)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start -1.27 6.35) (end 3.81 -6.35)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-        (rectangle (start 3.81 -4.953) (end 2.54 -5.207)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 3.81 -2.413) (end 2.54 -2.667)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 3.81 0.127) (end 2.54 -0.127)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 3.81 2.667) (end 2.54 2.413)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 3.81 5.207) (end 2.54 4.953)
-          (stroke (width 0.1524) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at -5.08 5.08 0) (length 3.81)
-          (name "Pin_1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 -5.08 180) (length 3.81)
-          (name "Pin_10" (effects (font (size 1.27 1.27))))
-          (number "10" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 5.08 180) (length 3.81)
-          (name "Pin_2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 3.81)
-          (name "Pin_3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 2.54 180) (length 3.81)
-          (name "Pin_4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "Pin_5" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 0 180) (length 3.81)
-          (name "Pin_6" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 3.81)
-          (name "Pin_7" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 7.62 -2.54 180) (length 3.81)
-          (name "Pin_8" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -5.08 0) (length 3.81)
-          (name "Pin_9" (effects (font (size 1.27 1.27))))
-          (number "9" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (at 0.635 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -561,65 +465,6 @@
         )
       )
     )
-    (symbol "Device:C_Polarized" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.635 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C_Polarized" (at 0.635 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0.9652 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "cap capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Polarized capacitor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "CP_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_Polarized_0_1"
-        (rectangle (start -2.286 0.508) (end 2.286 1.016)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.778 2.286)
-            (xy -0.762 2.286)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 2.794)
-            (xy -1.27 1.778)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 2.286 -0.508) (end -2.286 -1.016)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "C_Polarized_1_1"
-        (pin passive line (at 0 3.81 270) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Device:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "R" (at 2.032 0 90)
         (effects (font (size 1.27 1.27)))
@@ -659,64 +504,43 @@
         )
       )
     )
-    (symbol "Device:R_Potentiometer" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "RV" (at -4.445 0 90)
-        (effects (font (size 1.27 1.27)))
+    (symbol "GND_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0)
+        (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "R_Potentiometer" (at -2.54 0 90)
+      (property "Value" "GND_1" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "~" (at 0 0 0)
+      (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "resistor variable" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Potentiometer" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Potentiometer*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_Potentiometer_0_1"
+      (symbol "GND_1_0_1"
         (polyline
           (pts
-            (xy 2.54 0)
-            (xy 1.524 0)
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27)
           )
           (stroke (width 0) (type default))
           (fill (type none))
         )
-        (polyline
-          (pts
-            (xy 1.143 0)
-            (xy 2.286 0.508)
-            (xy 2.286 -0.508)
-            (xy 1.143 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (rectangle (start 1.016 2.54) (end -1.016 -2.54)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
       )
-      (symbol "R_Potentiometer_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "1" (effects (font (size 1.27 1.27))))
+      (symbol "GND_1_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide
+          (name "GND" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 3.81 0 180) (length 1.27)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
         )
       )
     )
@@ -1028,14 +852,8 @@
   (junction (at 474.98 68.58) (diameter 0) (color 0 0 0 0)
     (uuid 110dfab8-c25e-4a5d-b8a2-faeb7ab8147b)
   )
-  (junction (at 309.88 130.81) (diameter 0) (color 0 0 0 0)
-    (uuid 12bdd97c-9986-461d-8415-31eb106b6e32)
-  )
   (junction (at 364.49 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 136a7fef-a2bd-4d56-a5c1-47f31b02520c)
-  )
-  (junction (at 339.09 121.92) (diameter 0) (color 0 0 0 0)
-    (uuid 136b310d-ff88-4a73-aa5b-11a51cf30447)
   )
   (junction (at 264.16 120.65) (diameter 0) (color 0 0 0 0)
     (uuid 153e3b93-d308-4f8e-8d15-995659c6c067)
@@ -1045,12 +863,6 @@
   )
   (junction (at 199.39 144.78) (diameter 0) (color 0 0 0 0)
     (uuid 1865c18b-0e33-4065-8e47-6abc7c9c7ad2)
-  )
-  (junction (at 326.39 113.03) (diameter 0) (color 0 0 0 0)
-    (uuid 2d621663-bc3c-4c21-a0d0-b20682a3b7d3)
-  )
-  (junction (at 326.39 130.81) (diameter 0) (color 0 0 0 0)
-    (uuid 32e02f8b-9fa7-43c7-a099-aa6f2ac1567a)
   )
   (junction (at 355.6 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 3c93095a-590d-4b1f-9c83-3203d4f954ca)
@@ -1063,9 +875,6 @@
   )
   (junction (at 454.66 58.42) (diameter 0) (color 0 0 0 0)
     (uuid 459608be-345e-4adb-8284-4295924909d5)
-  )
-  (junction (at 326.39 121.92) (diameter 0) (color 0 0 0 0)
-    (uuid 4736a5dd-ab39-45d1-a2d0-cc98d567a446)
   )
   (junction (at 180.34 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 4fd0c989-fbd9-4ffc-a665-c358e9c3cedf)
@@ -1081,9 +890,6 @@
   )
   (junction (at 133.35 85.09) (diameter 0) (color 0 0 0 0)
     (uuid 5c5e1362-a743-43c0-9e13-2b0cdcd78c6c)
-  )
-  (junction (at 133.35 134.62) (diameter 0) (color 0 0 0 0)
-    (uuid 648d9a0f-5b8b-4d91-8f43-36b6d4d2fc75)
   )
   (junction (at 281.94 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 64dbe3b8-d51b-4de2-ba71-474104ea4f4e)
@@ -1102,9 +908,6 @@
   )
   (junction (at 251.46 120.65) (diameter 0) (color 0 0 0 0)
     (uuid 86044734-b82b-4ab1-9291-8d0374d3106b)
-  )
-  (junction (at 309.88 121.92) (diameter 0) (color 0 0 0 0)
-    (uuid 867a68d3-5e90-434d-a604-34ad69506a44)
   )
   (junction (at 276.86 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 8b78dfd2-3aa0-4a9f-b1df-8d9364c645c4)
@@ -1144,9 +947,6 @@
   )
   (junction (at 233.68 66.04) (diameter 0) (color 0 0 0 0)
     (uuid d3d27527-c2b4-4653-969a-64021a573373)
-  )
-  (junction (at 309.88 113.03) (diameter 0) (color 0 0 0 0)
-    (uuid d3f12bfb-0e2f-4cc4-a393-1ce2540961f4)
   )
   (junction (at 401.32 66.04) (diameter 0) (color 0 0 0 0)
     (uuid d5565715-e55f-473e-b8a9-a101a473e045)
@@ -1188,6 +988,10 @@
     (stroke (width 0) (type default))
     (uuid 0369b199-1da9-494b-abc6-13adbb041500)
   )
+  (wire (pts (xy 53.34 128.27) (xy 55.88 128.27))
+    (stroke (width 0) (type default))
+    (uuid 040f3374-17b7-4837-b35e-26bf9d121c9c)
+  )
   (wire (pts (xy 142.24 134.62) (xy 144.78 134.62))
     (stroke (width 0) (type default))
     (uuid 049b1a61-4922-438c-a7cd-812a5bf6f509)
@@ -1224,6 +1028,10 @@
     (stroke (width 0) (type default))
     (uuid 0d04e64f-4365-447d-9822-f6cb29be8802)
   )
+  (wire (pts (xy 53.34 147.32) (xy 55.88 147.32))
+    (stroke (width 0) (type default))
+    (uuid 0db465ff-c2e8-4ba8-802c-253ced1ff649)
+  )
   (wire (pts (xy 250.19 120.65) (xy 251.46 120.65))
     (stroke (width 0) (type default))
     (uuid 1630134d-34d5-4d55-a9ac-cf9f50b5dad9)
@@ -1235,10 +1043,6 @@
   (wire (pts (xy 251.46 137.16) (xy 251.46 138.43))
     (stroke (width 0) (type default))
     (uuid 1681a7d2-34fc-4fed-9db7-4c8fc21f1c0d)
-  )
-  (wire (pts (xy 104.14 129.54) (xy 114.3 129.54))
-    (stroke (width 0) (type default))
-    (uuid 171f1292-9138-4553-9139-caaf15e762f2)
   )
   (wire (pts (xy 378.46 66.04) (xy 381 66.04))
     (stroke (width 0) (type default))
@@ -1264,17 +1068,9 @@
     (stroke (width 0) (type default))
     (uuid 1cb15f3c-96b7-43cd-a182-94e48b5de466)
   )
-  (wire (pts (xy 105.41 81.28) (xy 105.41 80.01))
-    (stroke (width 0) (type default))
-    (uuid 1ec6ca43-96d1-4f96-83ae-eade292669a1)
-  )
   (wire (pts (xy 246.38 58.42) (xy 254 58.42))
     (stroke (width 0) (type default))
     (uuid 1f5c7068-bbf8-4357-a951-8a849aab4f44)
-  )
-  (wire (pts (xy 309.88 121.92) (xy 326.39 121.92))
-    (stroke (width 0) (type default))
-    (uuid 208d0b3f-906a-49ad-8a8c-5549455b515a)
   )
   (wire (pts (xy 203.2 90.17) (xy 203.2 92.71))
     (stroke (width 0) (type default))
@@ -1284,6 +1080,14 @@
     (stroke (width 0) (type default))
     (uuid 20f43c5c-8569-404a-983b-5c2c98b6b271)
   )
+  (wire (pts (xy 50.8 110.49) (xy 55.88 110.49))
+    (stroke (width 0) (type default))
+    (uuid 25e893ab-8f3b-4d1a-b3dc-d17d67a4f330)
+  )
+  (wire (pts (xy 52.07 64.77) (xy 55.88 64.77))
+    (stroke (width 0) (type default))
+    (uuid 2645df7e-fd1d-447f-a350-8450ccda13b0)
+  )
   (wire (pts (xy 467.36 58.42) (xy 474.98 58.42))
     (stroke (width 0) (type default))
     (uuid 2714de57-7b00-4bc5-aa98-25811bba59ea)
@@ -1291,10 +1095,6 @@
   (wire (pts (xy 304.8 66.04) (xy 307.34 66.04))
     (stroke (width 0) (type default))
     (uuid 27b9f07f-1566-4d98-8626-82bb03ed968e)
-  )
-  (wire (pts (xy 114.3 138.43) (xy 114.3 139.7))
-    (stroke (width 0) (type default))
-    (uuid 27d3078c-ca78-4410-b310-f400180de312)
   )
   (wire (pts (xy 424.18 66.04) (xy 424.18 82.55))
     (stroke (width 0) (type default))
@@ -1307,10 +1107,6 @@
   (wire (pts (xy 355.6 66.04) (xy 355.6 73.66))
     (stroke (width 0) (type default))
     (uuid 2c2a113e-79f0-463c-a238-d74f9dba99c5)
-  )
-  (wire (pts (xy 326.39 113.03) (xy 339.09 113.03))
-    (stroke (width 0) (type default))
-    (uuid 2d55f960-8a27-4278-8926-609df0079865)
   )
   (wire (pts (xy 281.94 66.04) (xy 281.94 73.66))
     (stroke (width 0) (type default))
@@ -1327,10 +1123,6 @@
   (wire (pts (xy 290.83 39.37) (xy 290.83 41.91))
     (stroke (width 0) (type default))
     (uuid 31a0c397-b9e7-41d2-99b1-58344998c28d)
-  )
-  (wire (pts (xy 118.11 113.03) (xy 121.92 113.03))
-    (stroke (width 0) (type default))
-    (uuid 31d38dda-ce2f-4e31-aba7-e4c5cb0f589a)
   )
   (wire (pts (xy 327.66 66.04) (xy 330.2 66.04))
     (stroke (width 0) (type default))
@@ -1376,14 +1168,6 @@
     (stroke (width 0) (type default))
     (uuid 3b849bd3-f0e8-431d-9f7e-0287fdf2e446)
   )
-  (wire (pts (xy 339.09 121.92) (xy 339.09 124.46))
-    (stroke (width 0) (type default))
-    (uuid 3d07c6ca-728d-4eab-b9b5-64e260dca0a8)
-  )
-  (wire (pts (xy 488.95 71.12) (xy 486.41 71.12))
-    (stroke (width 0) (type default))
-    (uuid 3d420424-c223-4312-b9c9-09ae52f95e48)
-  )
   (wire (pts (xy 290.83 66.04) (xy 297.18 66.04))
     (stroke (width 0) (type default))
     (uuid 3f6c7b23-20b3-430d-8cb6-edc5a6edfb9b)
@@ -1411,10 +1195,6 @@
   (wire (pts (xy 312.42 58.42) (xy 307.34 58.42))
     (stroke (width 0) (type default))
     (uuid 434d9d56-d2b6-4a28-bdcf-89e2afab7b8e)
-  )
-  (wire (pts (xy 118.11 158.75) (xy 121.92 158.75))
-    (stroke (width 0) (type default))
-    (uuid 438e93a1-de21-4eb5-ba41-3a1b78e0df4c)
   )
   (wire (pts (xy 151.13 90.17) (xy 151.13 92.71))
     (stroke (width 0) (type default))
@@ -1452,15 +1232,11 @@
     (stroke (width 0) (type default))
     (uuid 4d26cb52-23c8-40fb-9a5a-1823177b7dd9)
   )
-  (wire (pts (xy 114.3 116.84) (xy 114.3 118.11))
-    (stroke (width 0) (type default))
-    (uuid 4d680151-8578-4c3e-a1ff-69a9c3ace338)
-  )
   (wire (pts (xy 320.04 44.45) (xy 327.66 44.45))
     (stroke (width 0) (type default))
     (uuid 4dc1fb8e-ff9d-4560-8861-8d297ba5f29e)
   )
-  (wire (pts (xy 474.98 68.58) (xy 477.52 68.58))
+  (wire (pts (xy 474.98 68.58) (xy 478.79 68.58))
     (stroke (width 0) (type default))
     (uuid 4dcc0373-f62f-4b51-93ae-0ede61468cae)
   )
@@ -1476,10 +1252,6 @@
     (stroke (width 0) (type default))
     (uuid 4f347590-5410-48a8-890d-55a14db43679)
   )
-  (wire (pts (xy 129.54 134.62) (xy 133.35 134.62))
-    (stroke (width 0) (type default))
-    (uuid 501aade7-48d4-4263-9325-8f83718605b2)
-  )
   (wire (pts (xy 350.52 90.17) (xy 350.52 92.71))
     (stroke (width 0) (type default))
     (uuid 50203f0f-4c33-42b7-9ac5-5cc7af3f1b99)
@@ -1491,6 +1263,10 @@
   (wire (pts (xy 133.35 85.09) (xy 140.97 85.09))
     (stroke (width 0) (type default))
     (uuid 51058e3c-1a5b-4327-8717-8e8b1d17d889)
+  )
+  (wire (pts (xy 53.34 123.19) (xy 55.88 123.19))
+    (stroke (width 0) (type default))
+    (uuid 513cad79-e98b-4c64-8da4-43a6708d3233)
   )
   (wire (pts (xy 290.83 66.04) (xy 290.83 68.58))
     (stroke (width 0) (type default))
@@ -1504,13 +1280,17 @@
     (stroke (width 0) (type default))
     (uuid 51f33661-956e-40b7-902d-9bd786df364a)
   )
+  (wire (pts (xy 53.34 107.95) (xy 55.88 107.95))
+    (stroke (width 0) (type default))
+    (uuid 5267d3f0-a22f-4366-9185-0c8be01d4854)
+  )
+  (wire (pts (xy 53.34 105.41) (xy 55.88 105.41))
+    (stroke (width 0) (type default))
+    (uuid 554160aa-0511-4f30-8dd8-713144c3ad46)
+  )
   (wire (pts (xy 209.55 58.42) (xy 208.28 58.42))
     (stroke (width 0) (type default))
     (uuid 582b24fb-1c96-4443-a130-f0188366d10d)
-  )
-  (wire (pts (xy 309.88 121.92) (xy 309.88 123.19))
-    (stroke (width 0) (type default))
-    (uuid 586e495f-88c3-440b-bdf1-70f0b8ef549a)
   )
   (wire (pts (xy 160.02 68.58) (xy 160.02 82.55))
     (stroke (width 0) (type default))
@@ -1568,18 +1348,6 @@
     (stroke (width 0) (type default))
     (uuid 653f8d30-c046-4b0a-a145-6dc90a81f184)
   )
-  (wire (pts (xy 326.39 130.81) (xy 326.39 127))
-    (stroke (width 0) (type default))
-    (uuid 66132c35-125b-483f-9a7e-b2201c2b9522)
-  )
-  (wire (pts (xy 129.54 158.75) (xy 133.35 158.75))
-    (stroke (width 0) (type default))
-    (uuid 683a3e14-2211-437c-9243-d3fcf9a75d51)
-  )
-  (wire (pts (xy 133.35 134.62) (xy 133.35 113.03))
-    (stroke (width 0) (type default))
-    (uuid 696ee2d1-d7e0-45ea-b9b3-ed102b2e4d98)
-  )
   (wire (pts (xy 214.63 137.16) (xy 217.17 137.16))
     (stroke (width 0) (type default))
     (uuid 6ad34640-c58e-4dde-8fc9-9a14c93222c3)
@@ -1616,25 +1384,13 @@
     (stroke (width 0) (type default))
     (uuid 70914faf-5780-4f48-b5e0-281b8c05d9e5)
   )
-  (wire (pts (xy 303.53 130.81) (xy 309.88 130.81))
-    (stroke (width 0) (type default))
-    (uuid 70c02f50-ff5d-4917-951d-d4892b164616)
-  )
   (wire (pts (xy 386.08 45.72) (xy 381 45.72))
     (stroke (width 0) (type default))
     (uuid 7152d30e-bba0-4cd5-8cd5-b6c9b20549bf)
   )
-  (wire (pts (xy 114.3 129.54) (xy 114.3 130.81))
+  (wire (pts (xy 53.34 67.31) (xy 55.88 67.31))
     (stroke (width 0) (type default))
-    (uuid 736aa139-9eae-4dc2-b4fa-b0ad6df98c69)
-  )
-  (wire (pts (xy 326.39 130.81) (xy 339.09 130.81))
-    (stroke (width 0) (type default))
-    (uuid 743b57ed-1294-4337-b62b-a330cf3c7ea7)
-  )
-  (wire (pts (xy 104.14 110.49) (xy 104.14 118.11))
-    (stroke (width 0) (type default))
-    (uuid 75d5e43d-8065-477b-8831-adb95ee6cd28)
+    (uuid 74ebeaec-56e2-4aed-8ce7-b92089ab1508)
   )
   (wire (pts (xy 233.68 66.04) (xy 236.22 66.04))
     (stroke (width 0) (type default))
@@ -1648,10 +1404,6 @@
     (stroke (width 0) (type default))
     (uuid 76397728-685f-4412-a4df-2ef62a34bcf3)
   )
-  (wire (pts (xy 309.88 130.81) (xy 326.39 130.81))
-    (stroke (width 0) (type default))
-    (uuid 76be76f0-f4e4-4a01-81f3-c428013d3b0f)
-  )
   (wire (pts (xy 217.17 39.37) (xy 217.17 41.91))
     (stroke (width 0) (type default))
     (uuid 78841695-0727-474e-ab1a-731199e93fe1)
@@ -1660,9 +1412,9 @@
     (stroke (width 0) (type default))
     (uuid 78aa2811-4c72-4993-b548-03818f4305d8)
   )
-  (wire (pts (xy 129.54 113.03) (xy 133.35 113.03))
+  (wire (pts (xy 53.34 99.06) (xy 55.88 99.06))
     (stroke (width 0) (type default))
-    (uuid 7b0c79a1-3669-45eb-b91d-f5c32ddf5955)
+    (uuid 7b1a71b1-3edf-4cd3-b15a-f2c4c9d3792d)
   )
   (wire (pts (xy 175.26 148.59) (xy 175.26 151.13))
     (stroke (width 0) (type default))
@@ -1671,14 +1423,6 @@
   (wire (pts (xy 430.53 58.42) (xy 429.26 58.42))
     (stroke (width 0) (type default))
     (uuid 7bd408f1-6674-4181-b6d2-5b4e5a994acf)
-  )
-  (wire (pts (xy 105.41 80.01) (xy 104.14 80.01))
-    (stroke (width 0) (type default))
-    (uuid 7c1abbe9-f2d4-472e-93d7-ca530936a45e)
-  )
-  (wire (pts (xy 326.39 119.38) (xy 326.39 121.92))
-    (stroke (width 0) (type default))
-    (uuid 7c41e423-fb55-4f4d-8ac6-7ce6b23fec90)
   )
   (wire (pts (xy 148.59 77.47) (xy 151.13 77.47))
     (stroke (width 0) (type default))
@@ -1692,10 +1436,6 @@
     (stroke (width 0) (type default))
     (uuid 802f949c-e9f8-4cbc-b83e-261f9e660bec)
   )
-  (wire (pts (xy 303.53 113.03) (xy 309.88 113.03))
-    (stroke (width 0) (type default))
-    (uuid 8118690b-d2d0-489d-875f-04d7b7f1e6e1)
-  )
   (wire (pts (xy 307.34 66.04) (xy 309.88 66.04))
     (stroke (width 0) (type default))
     (uuid 826565b6-b1ee-4b8e-a29c-55c42c564b80)
@@ -1703,10 +1443,6 @@
   (wire (pts (xy 199.39 153.67) (xy 199.39 154.94))
     (stroke (width 0) (type default))
     (uuid 8299ac55-810a-45db-bbc0-bbe908b4d0ce)
-  )
-  (wire (pts (xy 104.14 107.95) (xy 114.3 107.95))
-    (stroke (width 0) (type default))
-    (uuid 82befcf2-9a72-4bd0-86ae-3b24bb4e4bef)
   )
   (wire (pts (xy 246.38 45.72) (xy 254 45.72))
     (stroke (width 0) (type default))
@@ -1732,10 +1468,6 @@
     (stroke (width 0) (type default))
     (uuid 8b7dab85-4442-41f5-93eb-988ea873fa21)
   )
-  (wire (pts (xy 114.3 162.56) (xy 114.3 163.83))
-    (stroke (width 0) (type default))
-    (uuid 8d1b05d6-86f1-47f5-85e9-8e96373a60f3)
-  )
   (wire (pts (xy 309.88 71.12) (xy 307.34 71.12))
     (stroke (width 0) (type default))
     (uuid 8d9a64c2-f31b-40ed-ac59-cf0262ddd273)
@@ -1743,10 +1475,6 @@
   (wire (pts (xy 203.2 66.04) (xy 203.2 82.55))
     (stroke (width 0) (type default))
     (uuid 8dd802bf-2344-4cde-b452-4135d90a0f27)
-  )
-  (wire (pts (xy 326.39 121.92) (xy 339.09 121.92))
-    (stroke (width 0) (type default))
-    (uuid 8dfbedd9-ad31-4068-b544-c0fe29beb625)
   )
   (wire (pts (xy 264.16 120.65) (xy 264.16 121.92))
     (stroke (width 0) (type default))
@@ -1756,17 +1484,13 @@
     (stroke (width 0) (type default))
     (uuid 8f2565cb-4df3-48a5-88ea-bc527bc8a1cb)
   )
-  (wire (pts (xy 309.88 120.65) (xy 309.88 121.92))
-    (stroke (width 0) (type default))
-    (uuid 93c33d01-9f81-4492-bfc4-f1f212a242f3)
-  )
   (wire (pts (xy 254 68.58) (xy 251.46 68.58))
     (stroke (width 0) (type default))
     (uuid 9467ec62-4588-4579-9f44-90540fce6612)
   )
-  (wire (pts (xy 104.14 132.08) (xy 104.14 139.7))
+  (wire (pts (xy 53.34 78.74) (xy 55.88 78.74))
     (stroke (width 0) (type default))
-    (uuid 95771d07-2daf-4159-a79c-6a8c0c58d705)
+    (uuid 95ffe0ac-ae39-4698-935c-d43b0fca11cc)
   )
   (wire (pts (xy 140.97 39.37) (xy 140.97 41.91))
     (stroke (width 0) (type default))
@@ -1792,9 +1516,9 @@
     (stroke (width 0) (type default))
     (uuid 995036c7-d0fa-4d64-a190-825b8466319d)
   )
-  (wire (pts (xy 339.09 113.03) (xy 339.09 116.84))
+  (wire (pts (xy 53.34 93.98) (xy 55.88 93.98))
     (stroke (width 0) (type default))
-    (uuid 99a7ef17-517d-46ff-9f6b-731aaa44f96f)
+    (uuid 99d67f94-78c3-4b27-aa1a-43f0ac18f592)
   )
   (wire (pts (xy 190.5 66.04) (xy 193.04 66.04))
     (stroke (width 0) (type default))
@@ -1812,10 +1536,6 @@
     (stroke (width 0) (type default))
     (uuid a18c5e88-962e-43c5-8105-f91621bfa4d9)
   )
-  (wire (pts (xy 303.53 121.92) (xy 309.88 121.92))
-    (stroke (width 0) (type default))
-    (uuid a23ead1e-005f-4218-b9be-1d86bc2b702e)
-  )
   (wire (pts (xy 459.74 45.72) (xy 454.66 45.72))
     (stroke (width 0) (type default))
     (uuid a2c35d9d-19b6-4573-9f91-61114a3dc7b5)
@@ -1824,9 +1544,9 @@
     (stroke (width 0) (type default))
     (uuid a36b4948-b0ee-45eb-86c5-edbb283dcdbc)
   )
-  (wire (pts (xy 326.39 121.92) (xy 326.39 124.46))
+  (wire (pts (xy 53.34 76.2) (xy 55.88 76.2))
     (stroke (width 0) (type default))
-    (uuid a5c48dde-15c8-4f85-a116-fecb17a044d1)
+    (uuid a47d52db-b842-47ff-a0eb-8d52cc47895b)
   )
   (wire (pts (xy 160.02 63.5) (xy 162.56 63.5))
     (stroke (width 0) (type default))
@@ -1843,6 +1563,10 @@
   (wire (pts (xy 337.82 66.04) (xy 340.36 66.04))
     (stroke (width 0) (type default))
     (uuid a9c03206-7dd1-4b16-ae3e-beb2a95b53f3)
+  )
+  (wire (pts (xy 53.34 144.78) (xy 55.88 144.78))
+    (stroke (width 0) (type default))
+    (uuid aa47ea01-dbda-4ffe-bf08-e2ff975bf535)
   )
   (wire (pts (xy 264.16 147.32) (xy 264.16 149.86))
     (stroke (width 0) (type default))
@@ -1896,14 +1620,6 @@
     (stroke (width 0) (type default))
     (uuid b55ad366-7b6f-48dc-a278-5e328c1b227a)
   )
-  (wire (pts (xy 114.3 107.95) (xy 114.3 109.22))
-    (stroke (width 0) (type default))
-    (uuid b9ba2352-8239-4397-8aab-d58ac322e486)
-  )
-  (wire (pts (xy 326.39 113.03) (xy 326.39 116.84))
-    (stroke (width 0) (type default))
-    (uuid ba3344e6-e4ef-4b2a-a918-de505d11fbe5)
-  )
   (wire (pts (xy 356.87 58.42) (xy 355.6 58.42))
     (stroke (width 0) (type default))
     (uuid bbf51908-3dd5-46ff-97d2-fc10005b2790)
@@ -1944,10 +1660,6 @@
     (stroke (width 0) (type default))
     (uuid c62e7a63-247d-4d36-a73d-e06c698b7e05)
   )
-  (wire (pts (xy 309.88 113.03) (xy 326.39 113.03))
-    (stroke (width 0) (type default))
-    (uuid c6689567-bcd7-43d1-b873-7069534d1079)
-  )
   (wire (pts (xy 364.49 63.5) (xy 364.49 66.04))
     (stroke (width 0) (type default))
     (uuid c6d7aad6-147a-4623-bcd1-8fd268e7187d)
@@ -1964,10 +1676,6 @@
     (stroke (width 0) (type default))
     (uuid ca5a721c-89fd-4fc2-ac3d-eae9e2f206a2)
   )
-  (wire (pts (xy 339.09 119.38) (xy 339.09 121.92))
-    (stroke (width 0) (type default))
-    (uuid cb976995-380a-4361-ac9b-02d0c212007a)
-  )
   (wire (pts (xy 133.35 85.09) (xy 133.35 104.14))
     (stroke (width 0) (type default))
     (uuid cf662898-15fc-4e02-89a6-d08d0f253e9f)
@@ -1975,10 +1683,6 @@
   (wire (pts (xy 474.98 58.42) (xy 474.98 68.58))
     (stroke (width 0) (type default))
     (uuid d0ab2be8-0f60-4b3e-be2d-c157a128fa3b)
-  )
-  (wire (pts (xy 118.11 134.62) (xy 121.92 134.62))
-    (stroke (width 0) (type default))
-    (uuid d2230f03-3e64-405b-8553-7c003d8ca629)
   )
   (wire (pts (xy 454.66 45.72) (xy 454.66 58.42))
     (stroke (width 0) (type default))
@@ -2000,9 +1704,17 @@
     (stroke (width 0) (type default))
     (uuid d8a9b766-c137-43fd-929e-749332b3aa28)
   )
+  (wire (pts (xy 53.34 113.03) (xy 55.88 113.03))
+    (stroke (width 0) (type default))
+    (uuid d9e37a48-d136-4e77-962a-f62efac67f4d)
+  )
   (wire (pts (xy 283.21 58.42) (xy 281.94 58.42))
     (stroke (width 0) (type default))
     (uuid dad8c1f9-cac3-4a18-b6fe-f39453dfd85e)
+  )
+  (wire (pts (xy 53.34 69.85) (xy 55.88 69.85))
+    (stroke (width 0) (type default))
+    (uuid dc01859f-499a-4203-95b6-d562bfd7ea3f)
   )
   (wire (pts (xy 454.66 66.04) (xy 457.2 66.04))
     (stroke (width 0) (type default))
@@ -2016,13 +1728,13 @@
     (stroke (width 0) (type default))
     (uuid dcf52ca1-cdff-49cb-94f9-73a181016c5e)
   )
-  (wire (pts (xy 114.3 153.67) (xy 114.3 154.94))
-    (stroke (width 0) (type default))
-    (uuid dcf98f62-305c-40c5-aa06-05141a0aadb9)
-  )
   (wire (pts (xy 274.32 66.04) (xy 276.86 66.04))
     (stroke (width 0) (type default))
     (uuid dd35dc2d-9503-4a6e-ae38-f27a2d0250a9)
+  )
+  (wire (pts (xy 53.34 139.7) (xy 55.88 139.7))
+    (stroke (width 0) (type default))
+    (uuid de987eb3-633e-43d9-a21f-f3a30229c6e0)
   )
   (wire (pts (xy 452.12 66.04) (xy 454.66 66.04))
     (stroke (width 0) (type default))
@@ -2052,25 +1764,25 @@
     (stroke (width 0) (type default))
     (uuid e9fc8c78-9986-4cdb-9ac5-9d0b00e5aa3d)
   )
-  (wire (pts (xy 339.09 130.81) (xy 339.09 127))
-    (stroke (width 0) (type default))
-    (uuid ea96c9fe-48c6-476a-91ca-083667ee628c)
-  )
   (wire (pts (xy 264.16 66.04) (xy 266.7 66.04))
     (stroke (width 0) (type default))
     (uuid ec97e9fb-b740-4153-94be-a398ece461d9)
+  )
+  (wire (pts (xy 53.34 62.23) (xy 55.88 62.23))
+    (stroke (width 0) (type default))
+    (uuid ee388f25-a58a-425b-b21d-5c81f92b8a67)
   )
   (wire (pts (xy 327.66 44.45) (xy 327.66 58.42))
     (stroke (width 0) (type default))
     (uuid ee7401f0-868e-4b9f-a1bd-a8a195c7f562)
   )
+  (wire (pts (xy 53.34 96.52) (xy 55.88 96.52))
+    (stroke (width 0) (type default))
+    (uuid eebc65a4-304a-45d3-8133-8e123ca5d213)
+  )
   (wire (pts (xy 142.24 128.27) (xy 142.24 134.62))
     (stroke (width 0) (type default))
     (uuid eecd7876-3fe9-41eb-862a-6356c05057c9)
-  )
-  (wire (pts (xy 485.14 68.58) (xy 488.95 68.58))
-    (stroke (width 0) (type default))
-    (uuid eef6bf4c-253f-413f-87aa-79a679d3eca5)
   )
   (wire (pts (xy 208.28 58.42) (xy 208.28 66.04))
     (stroke (width 0) (type default))
@@ -2100,10 +1812,6 @@
     (stroke (width 0) (type default))
     (uuid f43ec275-d596-4e85-bbdb-8a47a12054c8)
   )
-  (wire (pts (xy 133.35 158.75) (xy 133.35 134.62))
-    (stroke (width 0) (type default))
-    (uuid f4551368-090d-4787-982f-9a0fbffc1152)
-  )
   (wire (pts (xy 140.97 63.5) (xy 140.97 72.39))
     (stroke (width 0) (type default))
     (uuid f496dda8-36cf-4724-b297-7d642a9584fd)
@@ -2116,13 +1824,17 @@
     (stroke (width 0) (type default))
     (uuid f853e33b-6a01-434f-98ec-12fe0e43b140)
   )
+  (wire (pts (xy 49.53 142.24) (xy 55.88 142.24))
+    (stroke (width 0) (type default))
+    (uuid fa65af5e-7f96-49f5-a606-762f3915f3b4)
+  )
+  (wire (pts (xy 53.34 125.73) (xy 55.88 125.73))
+    (stroke (width 0) (type default))
+    (uuid fb475dd6-c9b7-44b9-b708-ced3476a7210)
+  )
   (wire (pts (xy 254 66.04) (xy 254 68.58))
     (stroke (width 0) (type default))
     (uuid fbc35356-fa8b-40d0-93a6-b26c41aa9539)
-  )
-  (wire (pts (xy 486.41 71.12) (xy 486.41 73.66))
-    (stroke (width 0) (type default))
-    (uuid fbc4b907-f530-4b3e-a1b3-cb9e4f5faf24)
   )
   (wire (pts (xy 251.46 120.65) (xy 251.46 121.92))
     (stroke (width 0) (type default))
@@ -2143,6 +1855,49 @@
   (wire (pts (xy 393.7 58.42) (xy 401.32 58.42))
     (stroke (width 0) (type default))
     (uuid ff205d16-921c-418f-98b7-27af3210d14f)
+  )
+
+  (global_label "OUT" (shape input) (at 478.79 68.58 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 048f3403-7fd9-468d-a7d7-ad0188b2dd28)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 485.4038 68.58 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "IN" (shape input) (at 52.07 64.77 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 3803d9ba-f794-4246-b5c9-7ad9825367c7)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 47.1495 64.77 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "CV_IN" (shape input) (at 133.35 134.62 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 5a237d54-7fce-4aee-8706-f13a0e448731)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 125.1033 134.62 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "CV_IN" (shape input) (at 49.53 142.24 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid b55597d0-20ef-4053-b77e-c7361ea39158)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.2833 142.24 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "OUT" (shape input) (at 50.8 110.49 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid c130adb3-588e-4285-9e3a-44ec12ddb836)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 44.1862 110.49 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "IN" (shape input) (at 104.14 77.47 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid f8933dec-7fb2-491c-ba7d-3225e5d53722)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 99.2195 77.47 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
   )
 
   (symbol (lib_id "Amplifier_Operational:TL072") (at 170.18 66.04 0) (mirror x) (unit 2)
@@ -2169,7 +1924,7 @@
     (pin "4" (uuid 5423175e-ff58-4d0f-b55a-1f1ea3702f62))
     (pin "8" (uuid 488b2f0e-36d3-4b9d-a2b5-c5cf9ef4b9c9))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "U1") (unit 2)
         )
@@ -2194,7 +1949,7 @@
     )
     (pin "1" (uuid 8c77d849-8ea9-4557-8e17-80bc9caed2f2))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR042") (unit 1)
         )
@@ -2211,7 +1966,7 @@
     (property "Value" "22k" (at 440.69 46.9899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 436.372 45.72 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 436.372 45.72 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 438.15 45.72 0)
@@ -2220,7 +1975,7 @@
     (pin "1" (uuid ec9a778e-7917-4536-bfb6-a06d7e59ce66))
     (pin "2" (uuid 7b66d6b1-9e53-4dc0-b5a2-08d087dd953d))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R39") (unit 1)
         )
@@ -2245,7 +2000,7 @@
     )
     (pin "1" (uuid 350fff70-3eb8-411c-b5f6-29c05f254b2b))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR055") (unit 1)
         )
@@ -2262,7 +2017,7 @@
     (property "Value" "22k" (at 293.37 46.9899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 289.052 45.72 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 289.052 45.72 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 290.83 45.72 0)
@@ -2271,36 +2026,9 @@
     (pin "1" (uuid 4a5e0c5c-6659-4665-85e8-9754833544e1))
     (pin "2" (uuid dfa02889-84ad-41fa-9604-3366adcbb048))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R27") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Potentiometer") (at 114.3 134.62 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0c1f93b9-c347-4f4d-841c-64c8174c53de)
-    (property "Reference" "RV38" (at 111.76 133.35 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "CV2" (at 111.76 135.89 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" (at 114.3 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 114.3 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "3" (uuid e20ed15a-f763-4d64-a4cc-3111b6908a79))
-    (pin "2" (uuid 44734ef8-5b50-4622-88e7-394db4a70c7d))
-    (pin "1" (uuid 42700c18-2f9d-4139-8705-d4de0bf31e79))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "RV38") (unit 1)
         )
       )
     )
@@ -2336,34 +2064,9 @@
     (pin "11" (uuid 0df98207-e35b-464c-83a0-ebb49bada906))
     (pin "4" (uuid 687cd1d2-973a-4f41-8a07-4fcc96f6f5b6))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "U2") (unit 2)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 105.41 81.28 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 0e8848eb-5359-412c-a953-1d34bb833777)
-    (property "Reference" "#PWR0123" (at 105.41 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 105.41 86.36 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 105.41 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 105.41 81.28 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 7b745be2-4948-4bb1-b4f4-e290ed9ad468))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR0123") (unit 1)
         )
       )
     )
@@ -2378,7 +2081,7 @@
     (property "Value" "27k" (at 417.83 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 417.83 67.818 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 417.83 67.818 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 417.83 66.04 0)
@@ -2387,35 +2090,9 @@
     (pin "1" (uuid 35aa92b9-0b89-4ad2-8f89-e4f3b71d27ae))
     (pin "2" (uuid df80f4a1-0386-4bbc-b230-e0e1affe3cb3))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R37") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 125.73 134.62 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 12ebc818-8955-40ad-8884-362a0659600f)
-    (property "Reference" "R12" (at 125.73 128.27 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "270k" (at 125.73 130.81 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 125.73 136.398 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 125.73 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f4d47bf6-771d-4db2-b41d-59e56297a641))
-    (pin "2" (uuid 94ef0f14-8e0c-436d-b024-d4ce225a224c))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "R12") (unit 1)
         )
       )
     )
@@ -2438,35 +2115,9 @@
     )
     (pin "1" (uuid 2c3c5a6b-59b8-402e-952b-c5a589958418))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0105") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 309.88 116.84 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 14efb353-6be3-473e-aeb8-06f994cd40fb)
-    (property "Reference" "C41" (at 313.69 114.681 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "47uf" (at 313.69 117.221 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (at 310.8452 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 309.88 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 2529ce14-73dd-4de5-8606-1c987b0ed81e))
-    (pin "1" (uuid 98031b15-477b-4679-ae99-5b97324ca15d))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "C41") (unit 1)
         )
       )
     )
@@ -2491,7 +2142,7 @@
     (pin "2" (uuid 446f5280-d9ff-4ecd-b02d-d099673b3838))
     (pin "3" (uuid 6fd900ed-3a2f-4f7c-ad2a-528f4ea3da9f))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q4") (unit 1)
         )
@@ -2516,7 +2167,7 @@
     )
     (pin "1" (uuid 77ece1e2-cfb5-4c0e-9e82-3e902dbca927))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0103") (unit 1)
         )
@@ -2541,34 +2192,9 @@
     )
     (pin "1" (uuid eff2725c-3481-4092-b3ea-db333cb324b7))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0119") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 104.14 139.7 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1a01493b-762d-4823-a181-6bfb6802c8ba)
-    (property "Reference" "#PWR049" (at 104.14 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 104.14 143.9717 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 104.14 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 104.14 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 99626a8b-05cf-4562-8f0f-cc5de0836374))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -2583,7 +2209,7 @@
     (property "Value" "120k" (at 242.57 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 242.57 60.198 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 242.57 60.198 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 242.57 58.42 0)
@@ -2592,9 +2218,34 @@
     (pin "1" (uuid 0dbb6608-41c1-48b3-89d4-5588ad0fd969))
     (pin "2" (uuid ba979b26-b3cb-4bd9-a6b3-39bc8bacf116))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R24") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 53.34 113.03 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1c258320-20e9-4a59-bfe7-4cb7b5620109)
+    (property "Reference" "#PWR056" (at 46.99 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 49.53 113.03 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 53.34 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid bfc872b6-813d-47a3-8f15-94f679a46275))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -2617,7 +2268,7 @@
     )
     (pin "1" (uuid 936309d9-5499-42ea-9c9f-82c7797e5e48))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR053") (unit 1)
         )
@@ -2643,7 +2294,7 @@
     (pin "1" (uuid c4264529-e391-46c2-9d56-ef682aa9ae5d))
     (pin "2" (uuid 3221eba6-edde-4639-b5c1-415396bd014a))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C8") (unit 1)
         )
@@ -2668,7 +2319,7 @@
     )
     (pin "1" (uuid 031600b6-ec0f-45cd-ba54-22ea030a242c))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0106") (unit 1)
         )
@@ -2693,7 +2344,7 @@
     )
     (pin "1" (uuid 9c54875e-51a6-4b23-8737-6066e971e0dd))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR045") (unit 1)
         )
@@ -2710,7 +2361,7 @@
     (property "Value" "68k" (at 426.72 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 422.402 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 422.402 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 424.18 86.36 0)
@@ -2719,7 +2370,7 @@
     (pin "1" (uuid bdd861a8-e539-4d5b-b517-082015f6bc30))
     (pin "2" (uuid 37560d19-da83-47b6-a4c2-a2f591407452))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R38") (unit 1)
         )
@@ -2736,7 +2387,7 @@
     (property "Value" "120k" (at 389.89 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 389.89 60.198 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 389.89 60.198 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 389.89 58.42 0)
@@ -2745,7 +2396,7 @@
     (pin "1" (uuid b3d567e2-8102-4847-bf8c-35461800f692))
     (pin "2" (uuid edbae34d-9edd-4205-9aca-81e3b5ea10ab))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R35") (unit 1)
         )
@@ -2762,7 +2413,7 @@
     (property "Value" "150k" (at 168.91 53.34 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 168.91 58.928 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 168.91 58.928 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 168.91 57.15 0)
@@ -2771,35 +2422,9 @@
     (pin "1" (uuid f22484ae-ba50-4899-bb0a-86870fa9f32a))
     (pin "2" (uuid 277e791b-1292-4095-b9cd-4e12664e50ba))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R11") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:AudioJack2") (at 99.06 107.95 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2925eb6c-817a-45a8-8f39-c43b40b0579e)
-    (property "Reference" "J37" (at 93.98 107.315 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "CV1" (at 93.98 109.855 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" (at 99.06 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 99.06 107.95 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "S" (uuid ab82d253-6fea-486c-a36f-4b3f69970c96))
-    (pin "T" (uuid d5a79425-cf6d-47a7-b3ec-380b6fa94feb))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "J37") (unit 1)
         )
       )
     )
@@ -2814,7 +2439,7 @@
     (property "Value" "150k" (at 162.56 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 158.242 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 158.242 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 160.02 86.36 0)
@@ -2823,7 +2448,7 @@
     (pin "1" (uuid b922cb61-a484-4d80-b4d4-ebb203830921))
     (pin "2" (uuid 1ca9ed64-5c3a-4b6c-804f-9339994025f0))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R10") (unit 1)
         )
@@ -2848,7 +2473,7 @@
     )
     (pin "1" (uuid 5bd16601-123b-4ea4-b13b-6bb4f5949e01))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0116") (unit 1)
         )
@@ -2865,7 +2490,7 @@
     (property "Value" "18k" (at 201.93 151.13 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 197.612 149.86 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 197.612 149.86 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 199.39 149.86 0)
@@ -2874,7 +2499,7 @@
     (pin "1" (uuid ef283b6f-16f7-430a-8c75-07bc63952d73))
     (pin "2" (uuid 1d94c871-a7c2-4f47-917c-be56edcb4351))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R18") (unit 1)
         )
@@ -2882,19 +2507,19 @@
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x10") (at 60.96 187.96 0) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x10") (at 60.96 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2ab01786-a396-4eac-8e52-c2bf30a62ac0)
-    (property "Reference" "J44" (at 63.5 187.96 0)
+    (property "Reference" "J3" (at 63.5 115.57 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_01x10" (at 63.5 190.5 0)
+    (property "Value" "Conn_01x10" (at 63.5 118.11 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" (at 60.96 187.96 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" (at 60.96 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 60.96 187.96 0)
+    (property "Datasheet" "~" (at 60.96 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 67de43aa-b80b-43f7-8f9d-1bdaa1ab1e54))
@@ -2908,9 +2533,9 @@
     (pin "8" (uuid 42971d8d-9c95-47ba-a48a-b9403c587bb6))
     (pin "9" (uuid 1bbc730d-d371-4257-acec-ad4a4b9c530b))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "J44") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -2933,7 +2558,7 @@
     )
     (pin "1" (uuid 833089cb-0c51-4fe6-a5f4-0804c6e05370))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0111") (unit 1)
         )
@@ -2960,35 +2585,9 @@
     (pin "2" (uuid bd92d74c-44f8-43db-bd97-1f5c30d1d48a))
     (pin "3" (uuid 63abd5ed-5917-461b-8e04-c11191c1cbcb))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 125.73 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 2f8b6a2f-b649-4568-a5a1-e8b472541f5e)
-    (property "Reference" "R13" (at 125.73 152.4 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "270k" (at 125.73 154.94 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 125.73 160.528 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 125.73 158.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9f64f3d4-418c-4731-890d-fe0d9f6f6ace))
-    (pin "2" (uuid 9605ccaa-38f1-4c57-a2cd-5bfea3b1e833))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "R13") (unit 1)
         )
       )
     )
@@ -3011,7 +2610,7 @@
     )
     (pin "1" (uuid 40ff40e2-f37b-47ef-84d9-efb6e8e2ce94))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR059") (unit 1)
         )
@@ -3028,7 +2627,7 @@
     (property "Value" "100n" (at 255.27 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" (at 252.4252 119.38 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L4.6mm_W2.0mm_P2.50mm_MKS02_FKP02" (at 252.4252 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 251.46 115.57 0)
@@ -3037,9 +2636,34 @@
     (pin "1" (uuid 1210e857-d372-424f-8a7d-730ffd976a74))
     (pin "2" (uuid 3150f118-9095-4852-9d9d-1f0d6ba5ee00))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C38") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 53.34 105.41 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 33fd5779-9b73-43aa-b56d-7e65b4a39af8)
+    (property "Reference" "#PWR048" (at 57.15 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 49.53 105.41 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 53.34 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 105.41 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f768a4f2-6abe-4269-a12f-256cf39172cd))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -3063,7 +2687,7 @@
     (pin "1" (uuid 5dbb8d23-4813-4885-b4c4-bb7471883fef))
     (pin "2" (uuid 18a5f31e-74da-45f4-856a-bcd26bf0f772))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C7") (unit 1)
         )
@@ -3080,7 +2704,7 @@
     (property "Value" "100n" (at 267.97 144.78 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" (at 265.1252 147.32 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L4.6mm_W2.0mm_P2.50mm_MKS02_FKP02" (at 265.1252 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 264.16 143.51 0)
@@ -3089,35 +2713,9 @@
     (pin "1" (uuid 6d1f657a-1ef9-49a8-8e20-649438149c8f))
     (pin "2" (uuid 2a8afc79-6ca7-45c7-89cf-b3a8895738b0))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C40") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:AudioJack2") (at 99.06 77.47 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3942a739-110d-4feb-a6a5-5dfa951b777e)
-    (property "Reference" "J39" (at 93.98 76.835 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "In" (at 93.98 79.375 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" (at 99.06 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 99.06 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "S" (uuid 8cd5d6b0-964c-43bf-9207-aeb05d9b5e27))
-    (pin "T" (uuid 8ede0aff-9445-4100-9236-18f533f8a47d))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "J39") (unit 1)
         )
       )
     )
@@ -3141,7 +2739,7 @@
     (pin "1" (uuid 87704c4e-6cea-4280-ac25-373204208351))
     (pin "2" (uuid 26fd0c66-c199-4209-b112-ea5c3b5372e0))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C5") (unit 1)
         )
@@ -3179,34 +2777,9 @@
     (pin "11" (uuid 644c2a7e-7ebb-4d59-a436-003aa300739f))
     (pin "4" (uuid 53adfd16-52e5-465f-8663-1c355366676b))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "U2") (unit 4)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+12V") (at 303.53 113.03 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3a12c8b1-93bc-4dbf-9d4d-0bc59cdd1384)
-    (property "Reference" "#PWR057" (at 307.34 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (at 299.72 113.03 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 303.53 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 303.53 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 014bc41d-9f56-438e-acf3-57d6416ea96b))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -3221,7 +2794,7 @@
     (property "Value" "100n" (at 267.97 116.84 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" (at 265.1252 119.38 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L4.6mm_W2.0mm_P2.50mm_MKS02_FKP02" (at 265.1252 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 264.16 115.57 0)
@@ -3230,7 +2803,7 @@
     (pin "1" (uuid 9a4fbf5c-c6cc-4bd6-9eca-810fb302907f))
     (pin "2" (uuid 4ba528c5-e836-490e-887b-2857fef233d2))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C37") (unit 1)
         )
@@ -3257,7 +2830,7 @@
     (pin "2" (uuid f7608a30-44ff-4000-8e3f-9b3b35d40285))
     (pin "3" (uuid ee7a80a9-5ca3-4f23-ac42-1b8becaa41b6))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q11") (unit 1)
         )
@@ -3274,7 +2847,7 @@
     (property "Value" "10k" (at 227.33 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 227.33 67.818 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 227.33 67.818 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 227.33 66.04 0)
@@ -3283,7 +2856,7 @@
     (pin "1" (uuid 76b2c517-d7fa-4102-80c9-de262eb5e371))
     (pin "2" (uuid 9e2ef4a6-702b-457b-87fe-b008671e6a71))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R23") (unit 1)
         )
@@ -3300,7 +2873,7 @@
     (property "Value" "820R" (at 119.38 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 115.062 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 115.062 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 116.84 86.36 0)
@@ -3309,7 +2882,7 @@
     (pin "1" (uuid 299d5976-8abe-48e4-834e-8d4259b05d3e))
     (pin "2" (uuid 4dbbb341-2a09-4255-ad4d-f0a501878780))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R4") (unit 1)
         )
@@ -3336,7 +2909,7 @@
     (pin "2" (uuid c7bd04c9-0668-43c8-8c77-c78f9a841d0e))
     (pin "3" (uuid 37cf216e-5dd8-4ab7-886d-ab64ec487848))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q6") (unit 1)
         )
@@ -3361,7 +2934,7 @@
     )
     (pin "1" (uuid d63d2e55-2584-4bab-8bdb-9d3ac3cc05e0))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0109") (unit 1)
         )
@@ -3386,7 +2959,7 @@
     )
     (pin "1" (uuid 5ca95f39-3ff0-41f1-836c-43a11f08580e))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR052") (unit 1)
         )
@@ -3403,7 +2976,7 @@
     (property "Value" "15k" (at 129.54 46.9899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 125.222 45.72 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 125.222 45.72 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 127 45.72 0)
@@ -3412,7 +2985,7 @@
     (pin "1" (uuid 953dcec8-9a10-4d5f-a1e4-fd9b05d3ee5e))
     (pin "2" (uuid f7cf9829-2497-47f1-918f-4e44aca451a9))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R5") (unit 1)
         )
@@ -3429,7 +3002,7 @@
     (property "Value" "22k" (at 219.71 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 215.392 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 215.392 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 217.17 86.36 0)
@@ -3438,7 +3011,7 @@
     (pin "1" (uuid e94e2836-7b9a-47f1-a224-928458d8a4fa))
     (pin "2" (uuid ac383816-5282-4c08-9626-cb4092abfff9))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R22") (unit 1)
         )
@@ -3463,7 +3036,7 @@
     )
     (pin "1" (uuid b0648edc-15ca-464d-ab6e-35ffb10274b9))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0120") (unit 1)
         )
@@ -3480,7 +3053,7 @@
     (property "Value" "27k" (at 344.17 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 344.17 67.818 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 344.17 67.818 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 344.17 66.04 0)
@@ -3489,7 +3062,7 @@
     (pin "1" (uuid 25014658-1e35-47f2-81a3-ed491022602a))
     (pin "2" (uuid 59880d33-7a72-41ca-be53-6414321448a9))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R31") (unit 1)
         )
@@ -3514,34 +3087,9 @@
     )
     (pin "1" (uuid effe86ed-8238-47af-aaf1-70a01b3afd37))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0113") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+12V") (at 114.3 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 432de235-777a-4222-99d7-a627fdfe5d3d)
-    (property "Reference" "#PWR051" (at 114.3 157.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (at 114.3 148.59 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 114.3 153.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 114.3 153.67 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a6d21716-6899-471c-a55a-c7993bbf681e))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -3556,7 +3104,7 @@
     (property "Value" "100n" (at 255.27 144.78 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm" (at 252.4252 147.32 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L4.6mm_W2.0mm_P2.50mm_MKS02_FKP02" (at 252.4252 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 251.46 143.51 0)
@@ -3565,7 +3113,7 @@
     (pin "1" (uuid 0972cd96-981b-4e28-9ce2-22e225ecd304))
     (pin "2" (uuid c07121a9-9f8e-4a06-848f-3a0b8628bed5))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C39") (unit 1)
         )
@@ -3573,26 +3121,26 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 114.3 163.83 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4571351d-bdc2-4cda-aeea-f09da287fad4)
-    (property "Reference" "#PWR050" (at 114.3 170.18 0)
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 53.34 93.98 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 49dd49c6-c0c4-4313-a8d2-006424866869)
+    (property "Reference" "#PWR070" (at 46.99 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 114.3 168.1017 0)
-      (effects (font (size 1.27 1.27)))
+    (property "Value" "GND" (at 49.53 93.98 90)
+      (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 114.3 163.83 0)
+    (property "Footprint" "" (at 53.34 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 114.3 163.83 0)
+    (property "Datasheet" "" (at 53.34 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c4ddf3aa-d620-49ff-a5ef-30562b4872b5))
+    (pin "1" (uuid f7a6aa35-d579-4bc4-af32-7b2abe4ec8e7))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
       )
     )
@@ -3607,7 +3155,7 @@
     (property "Value" "10" (at 209.55 126.9999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 205.232 125.73 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 205.232 125.73 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 207.01 125.73 0)
@@ -3616,7 +3164,7 @@
     (pin "1" (uuid 92fd4235-2e3a-49b1-ad8a-6c51c274e0e0))
     (pin "2" (uuid da7c3db0-1409-4c02-9226-4547215059a4))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R15") (unit 1)
         )
@@ -3633,7 +3181,7 @@
     (property "Value" "15k" (at 153.67 74.93 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 153.67 70.358 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 153.67 70.358 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 68.58 0)
@@ -3642,7 +3190,7 @@
     (pin "1" (uuid 0ed327ec-2ef5-4b1a-853a-5fc870775ba5))
     (pin "2" (uuid 99720131-da33-440f-ad3f-e22ef5a5be27))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R9") (unit 1)
         )
@@ -3667,9 +3215,34 @@
     )
     (pin "1" (uuid 4667fd55-d596-4108-a427-0344f23f0a9c))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0107") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 53.34 139.7 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 4c21f771-4b5e-4ae7-a500-8a59f9a9d768)
+    (property "Reference" "#PWR064" (at 46.99 139.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 49.53 139.7 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 53.34 139.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 139.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 53187e73-1a25-4265-a560-2bd1f1394fb2))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR064") (unit 1)
         )
       )
     )
@@ -3693,7 +3266,7 @@
     (pin "1" (uuid 309e3fda-7e51-4fd2-b204-1bd80c0433e4))
     (pin "2" (uuid 5b33ede7-c682-4720-a3e2-fcf9f49e74ae))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C4") (unit 1)
         )
@@ -3718,7 +3291,7 @@
     )
     (pin "1" (uuid ea50d3e2-cab3-42f0-8531-6171f808b799))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR063") (unit 1)
         )
@@ -3735,7 +3308,7 @@
     (property "Value" "10k" (at 374.65 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 374.65 67.818 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 374.65 67.818 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 374.65 66.04 0)
@@ -3744,7 +3317,7 @@
     (pin "1" (uuid dfaa7542-5c2d-446c-a7ec-8f3de4b51772))
     (pin "2" (uuid 56638401-b671-4db3-8779-f8a40482a9a5))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R36") (unit 1)
         )
@@ -3771,34 +3344,9 @@
     (pin "2" (uuid 1f1e2c4d-a488-4aff-aad2-b9b5b2db5e2d))
     (pin "3" (uuid 11264c7e-7faf-4e53-9c3d-d0f5185fee8d))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 486.41 73.66 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 53c7e302-da23-4cec-b7d0-36e28ef1d1b6)
-    (property "Reference" "#PWR0110" (at 486.41 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 486.41 78.74 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 486.41 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 486.41 73.66 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid bf788cc2-fccc-4fc9-b5b3-c87d8250b4a4))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR0110") (unit 1)
         )
       )
     )
@@ -3813,7 +3361,7 @@
     (property "Value" "1k" (at 153.67 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 149.352 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 149.352 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 151.13 86.36 0)
@@ -3822,7 +3370,7 @@
     (pin "1" (uuid 63200ff0-1308-4e22-a842-17fa89be255f))
     (pin "2" (uuid 7f54f067-be1c-46b8-8fe2-c9d9b4a02769))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R7") (unit 1)
         )
@@ -3839,7 +3387,7 @@
     (property "Value" "15k" (at 143.51 46.9899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 139.192 45.72 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 139.192 45.72 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 140.97 45.72 0)
@@ -3848,7 +3396,7 @@
     (pin "1" (uuid 09638a6c-c958-4c7a-a24c-ba8b04716d9a))
     (pin "2" (uuid 6ba38210-6f3d-4f47-9447-d29aa72b516e))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R6") (unit 1)
         )
@@ -3856,27 +3404,26 @@
     )
   )
 
-  (symbol (lib_id "Connector:AudioJack2") (at 494.03 71.12 0) (mirror y) (unit 1)
+  (symbol (lib_id "power:-12V") (at 53.34 76.2 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 5988c0c8-fbac-41db-a1d7-3df6866d6ed3)
-    (property "Reference" "J40" (at 499.11 69.215 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "Out" (at 499.11 71.755 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" (at 494.03 71.12 0)
+    (uuid 58e42d52-1b27-4bc9-a14a-820593e968b2)
+    (property "Reference" "#PWR050" (at 50.8 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 494.03 71.12 0)
+    (property "Value" "-12V" (at 49.53 76.2 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 53.34 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "S" (uuid 055e0804-2213-4de0-a5e1-608897976f81))
-    (pin "T" (uuid 3d6152d9-0272-4c5e-a2d1-1cdf29143306))
+    (property "Datasheet" "" (at 53.34 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e0c1fe1d-c5ba-4571-bc42-859067f5aec2))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "J40") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
@@ -3901,7 +3448,7 @@
     (pin "2" (uuid 9da3d535-42a7-462f-b821-99dafc8a6253))
     (pin "3" (uuid 9c9b0549-9d03-470e-a407-65d485fe9ab9))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q9") (unit 1)
         )
@@ -3909,52 +3456,131 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 104.14 118.11 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 60677fb3-0678-4291-b696-bc58b70d2991)
-    (property "Reference" "#PWR048" (at 104.14 124.46 0)
+  (symbol (lib_id "power:+12V") (at 53.34 147.32 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5eedceec-8f0d-4d2d-a85e-967ef4215fd6)
+    (property "Reference" "#PWR047" (at 57.15 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 104.14 122.3817 0)
-      (effects (font (size 1.27 1.27)))
+    (property "Value" "+12V" (at 49.53 147.32 90)
+      (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 104.14 118.11 0)
+    (property "Footprint" "" (at 53.34 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 104.14 118.11 0)
+    (property "Datasheet" "" (at 53.34 147.32 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 41180d89-d4d1-4f33-93a6-c554a35db610))
+    (pin "1" (uuid 5e6d9f3b-ec69-421b-9fc8-f8c4da9c16ab))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Connector:AudioJack2") (at 99.06 129.54 0) (mirror x) (unit 1)
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 53.34 123.19 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 632adce0-ab6e-4afb-83c1-96e9b9a7456c)
-    (property "Reference" "J38" (at 93.98 128.905 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "CV2" (at 93.98 131.445 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" (at 99.06 129.54 0)
+    (uuid 6362988a-b580-463a-9749-a032d5b09e1d)
+    (property "Reference" "#PWR071" (at 46.99 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 99.06 129.54 0)
+    (property "Value" "GND" (at 49.53 123.19 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 53.34 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "S" (uuid 0b84b073-87f7-40a2-961a-0087f5e4936c))
-    (pin "T" (uuid fbe01c42-ef9d-41d4-974d-05f0e6000e45))
+    (property "Datasheet" "" (at 53.34 123.19 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9c2908b1-81ae-4b0b-bb72-f083a40734d4))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "J38") (unit 1)
+          (reference "#PWR071") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 53.34 96.52 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 63f945c5-c1f4-469d-9f02-6a1de406d654)
+    (property "Reference" "#PWR069" (at 57.15 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 49.53 96.52 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 53.34 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 25fbca38-24ee-44ee-894d-cddd7d971e71))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR069") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x06") (at 60.96 139.7 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 6505334c-d9aa-4e71-ac00-ad54e08fd256)
+    (property "Reference" "J4" (at 63.5 139.7 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Conn_01x06" (at 63.5 142.24 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" (at 60.96 139.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 60.96 139.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "3" (uuid 7d45fe04-a46d-4179-b9da-1d6817a3b7fa))
+    (pin "6" (uuid 39100f81-4df3-484f-ab24-d6bbe3758585))
+    (pin "2" (uuid 835f1d89-9604-4fc8-ad4f-7da02cf53746))
+    (pin "5" (uuid 4cce656a-af36-4008-ba2e-0a8f4db490b4))
+    (pin "4" (uuid 5639d34f-baa7-41e3-81ab-cd703ccec200))
+    (pin "1" (uuid 7871bf81-5f87-4ac8-b7c0-d8d0c6441594))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "J4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 53.34 107.95 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 662fe10f-3579-433f-a3bb-ac68a8b59179)
+    (property "Reference" "#PWR051" (at 46.99 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 49.53 107.95 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 53.34 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid affce7cb-fbd7-494b-a6ee-9522134f6b97))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR051") (unit 1)
         )
       )
     )
@@ -3977,7 +3603,7 @@
     )
     (pin "1" (uuid f2fa6320-e222-417a-8558-6b7282ac6915))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR061") (unit 1)
         )
@@ -4003,34 +3629,9 @@
     (pin "1" (uuid 83e1706c-aa31-40eb-942c-8303ce5f3682))
     (pin "2" (uuid 9afe8633-dd56-4836-8d68-2fc7e6ecb042))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 114.3 118.11 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 6fcfedea-aef9-4403-a344-caff485e3a3f)
-    (property "Reference" "#PWR046" (at 114.3 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 114.3 122.3817 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 114.3 118.11 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 114.3 118.11 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0b9973d1-1cf4-420e-b564-6c3569d68096))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -4045,7 +3646,7 @@
     (property "Value" "120k" (at 110.49 73.66 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 110.49 79.248 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 110.49 79.248 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 110.49 77.47 0)
@@ -4054,34 +3655,9 @@
     (pin "1" (uuid 5a3a2f0f-f5f6-4547-922e-47e2514f42e7))
     (pin "2" (uuid 127ebd94-c367-4afa-8c5b-cd21af58184c))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 114.3 139.7 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 731d4293-5264-4a92-a109-f845a614b799)
-    (property "Reference" "#PWR047" (at 114.3 146.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 114.3 143.9717 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 114.3 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 114.3 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ef919885-c71e-4ac2-aa1c-cc187cee1047))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR047") (unit 1)
         )
       )
     )
@@ -4117,35 +3693,9 @@
     (pin "11" (uuid 4a696160-4986-48d8-9b9d-abe722d7c1c9))
     (pin "4" (uuid a07d3dcb-eacf-458a-9feb-39a8fc482d52))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "U2") (unit 5)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 481.33 68.58 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7b4f960f-46eb-4d67-8d8e-ecc540634eba)
-    (property "Reference" "C11" (at 480.441 60.96 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10µ" (at 480.441 63.5 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (at 485.14 67.6148 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 481.33 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a4861ba2-097a-47d2-8809-7ae1055e7abe))
-    (pin "2" (uuid 162e7319-d7f0-4cd8-9cac-782db3c930be))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "C11") (unit 1)
         )
       )
     )
@@ -4160,7 +3710,7 @@
     (property "Value" "68k" (at 279.4 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 275.082 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 275.082 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 276.86 86.36 0)
@@ -4169,7 +3719,7 @@
     (pin "1" (uuid b845f980-bdf4-4bbe-bfc0-df4e20208d8f))
     (pin "2" (uuid 29083b7f-2dce-48de-a5f4-7b32f1c17936))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R26") (unit 1)
         )
@@ -4194,7 +3744,7 @@
     )
     (pin "1" (uuid 6712c10b-8ff4-47b8-a8e9-dcdb065c9625))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR060") (unit 1)
         )
@@ -4219,35 +3769,9 @@
     )
     (pin "1" (uuid 6480a629-5b1d-4a74-8b3f-3369ea8068ea))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR037") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Polarized") (at 309.88 127 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 81a46f5b-fd86-4d5e-b77e-68328eaeb3d2)
-    (property "Reference" "C42" (at 313.69 124.841 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "47uf" (at 313.69 127.381 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (at 310.8452 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 309.88 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "2" (uuid 62f83d12-32b1-403b-b618-f4ed9de69397))
-    (pin "1" (uuid 4fde19ba-49e6-4705-afa5-cfbcb24847a9))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "C42") (unit 1)
         )
       )
     )
@@ -4262,7 +3786,7 @@
     (property "Value" "68k" (at 353.06 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 348.742 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 348.742 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 350.52 86.36 0)
@@ -4271,7 +3795,7 @@
     (pin "1" (uuid f9abc6ad-f584-43e4-a9b8-ad57be8f1312))
     (pin "2" (uuid c4257320-32ff-474f-830c-7b34cbac607f))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R32") (unit 1)
         )
@@ -4303,7 +3827,7 @@
     (pin "4" (uuid 5423175e-ff58-4d0f-b55a-1f1ea3702f63))
     (pin "8" (uuid 488b2f0e-36d3-4b9d-a2b5-c5cf9ef4b9ca))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "U1") (unit 1)
         )
@@ -4328,9 +3852,39 @@
     )
     (pin "1" (uuid 09b30f40-6830-4b3e-8ff2-559f97caa0ae))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0102") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector_Generic:Conn_01x06") (at 60.96 62.23 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8a0192ef-04c1-4a15-a65c-7c5615ecf32e)
+    (property "Reference" "J1" (at 63.5 62.23 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Conn_01x06" (at 63.5 64.77 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" (at 60.96 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 60.96 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "3" (uuid 5986b249-c115-46c0-ab79-87c7aeed8a11))
+    (pin "6" (uuid 1048755f-48e4-4140-9e8e-b4e3d54073af))
+    (pin "2" (uuid 7085d988-1bb9-4d68-a2f4-bed55dd07a31))
+    (pin "5" (uuid 42922104-1731-4c3e-92df-3c5621c8a53c))
+    (pin "4" (uuid 45950b18-870f-4b44-8262-6b3cb60b4c4f))
+    (pin "1" (uuid 99f9feac-c866-4a41-922a-a00449d2308f))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -4353,7 +3907,7 @@
     )
     (pin "1" (uuid 919641a3-095d-484e-88ce-151105f55994))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR038") (unit 1)
         )
@@ -4378,7 +3932,7 @@
     )
     (pin "1" (uuid fabb75b5-0b9f-4030-a89e-48ae1dd96f85))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR041") (unit 1)
         )
@@ -4395,7 +3949,7 @@
     (property "Value" "120k" (at 177.8 130.8099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 173.482 129.54 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 173.482 129.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 175.26 129.54 0)
@@ -4404,7 +3958,7 @@
     (pin "1" (uuid ce93ffc9-2389-413e-a429-bc8df7488243))
     (pin "2" (uuid 21f492f4-36e7-4097-bc5f-59f2f75fc3b5))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R43") (unit 1)
         )
@@ -4431,9 +3985,34 @@
     (pin "2" (uuid d9ba6452-5016-4dba-983d-e9935423d94d))
     (pin "3" (uuid 509fbc40-dc80-40a8-ac49-8be38c337e0a))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q8") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:-12V") (at 53.34 69.85 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 91a2de57-1dec-42d1-9ab9-723a917a86be)
+    (property "Reference" "#PWR049" (at 50.8 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "-12V" (at 49.53 69.85 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 53.34 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 69.85 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 467753c5-4864-4718-9bca-8dafc4da4562))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -4448,7 +4027,7 @@
     (property "Value" "15k" (at 153.67 59.69 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 153.67 65.278 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 153.67 65.278 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 153.67 63.5 0)
@@ -4457,7 +4036,7 @@
     (pin "1" (uuid e3cbed34-8088-46d9-99e3-a20067f11504))
     (pin "2" (uuid 9bc18d56-452d-4c54-badc-6154c49d01f2))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R8") (unit 1)
         )
@@ -4482,7 +4061,7 @@
     )
     (pin "1" (uuid a9562bad-f988-45d7-97fd-f3a9a10e85d3))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0121") (unit 1)
         )
@@ -4507,7 +4086,7 @@
     )
     (pin "1" (uuid 8c3ab187-a14c-4914-8447-7c8d52253886))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0114") (unit 1)
         )
@@ -4532,7 +4111,7 @@
     )
     (pin "1" (uuid fa742572-152a-4151-b59d-9b0824ded7c2))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR062") (unit 1)
         )
@@ -4558,9 +4137,34 @@
     (pin "1" (uuid 12c01259-8577-4d85-9b46-d943bfb4e79a))
     (pin "2" (uuid 8b41d357-bfa3-4611-9ab2-d65c3e651d73))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 53.34 67.31 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a5cae4cf-38db-47d8-82a7-c369514188b6)
+    (property "Reference" "#PWR058" (at 46.99 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 49.53 67.31 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 53.34 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f931ffa8-b13d-4f19-a1c8-5c6b8fb8b08f))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR058") (unit 1)
         )
       )
     )
@@ -4575,7 +4179,7 @@
     (property "Value" "68k" (at 205.74 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 201.422 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 201.422 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 203.2 86.36 0)
@@ -4584,7 +4188,7 @@
     (pin "1" (uuid 98ac465f-3382-4c51-adf0-9ca8f38f8ade))
     (pin "2" (uuid 1a06cefc-63f5-4b56-90e5-04d3795b35c0))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R20") (unit 1)
         )
@@ -4609,7 +4213,7 @@
     )
     (pin "1" (uuid 0bb8e4c5-e488-449b-a43b-66cec84fe921))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR044") (unit 1)
         )
@@ -4647,7 +4251,7 @@
     (pin "11" (uuid 421c7ab8-9a3c-4554-87d2-caecfc6f029d))
     (pin "4" (uuid 872b0a8e-6513-4022-a4a7-31ed44738723))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "U2") (unit 3)
         )
@@ -4664,7 +4268,7 @@
     (property "Value" "120k" (at 463.55 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 463.55 60.198 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 463.55 60.198 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 463.55 58.42 0)
@@ -4673,43 +4277,9 @@
     (pin "1" (uuid 1e3e24c5-6ae3-469b-b154-90b9eeffc808))
     (pin "2" (uuid fca24fba-b413-4084-9f7a-01d9e7a2fcd5))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R41") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_02x05_Odd_Even") (at 334.01 121.92 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ac78ae2f-3a1e-4770-bed5-cbf97c0f0666)
-    (property "Reference" "J45" (at 332.74 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Conn_02x05_Odd_Even" (at 332.74 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" (at 334.01 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 334.01 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1159545b-dead-45c7-ac67-a06cd806ab48))
-    (pin "8" (uuid 1e339457-c1dc-4ce2-839a-8abbb8bbdd3f))
-    (pin "9" (uuid d37f8e41-e747-4cc3-afdb-51808c155d60))
-    (pin "2" (uuid 0669e2b4-43f3-40c6-b554-41f8c2065d96))
-    (pin "3" (uuid e617807f-8d4d-4e71-b4c3-747ccb5c1c23))
-    (pin "4" (uuid 37907064-9e0e-447c-a46b-2814d2e5ebff))
-    (pin "5" (uuid 6fd94d19-9dd8-4459-90bd-61e5e5e6ccc8))
-    (pin "6" (uuid 41f97765-37ed-482a-aee6-7737fc3b092d))
-    (pin "7" (uuid ac2081ac-88bb-4704-a76e-2c91e88b8045))
-    (pin "10" (uuid ba95b6e4-a445-46bd-855c-b4db69574ed5))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "J45") (unit 1)
         )
       )
     )
@@ -4718,13 +4288,13 @@
   (symbol (lib_id "Connector_Generic:Conn_01x10") (at 60.96 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid acd300c4-1fc1-45eb-a1da-3447fd61ccf1)
-    (property "Reference" "J41" (at 63.5 86.36 0)
+    (property "Reference" "J2" (at 63.5 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x10" (at 63.5 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" (at 60.96 86.36 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" (at 60.96 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 60.96 86.36 0)
@@ -4741,9 +4311,34 @@
     (pin "8" (uuid 55ab2da8-67ee-4639-941e-465731841f5c))
     (pin "9" (uuid a46adc66-925f-4ce4-91f8-2f2791537877))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "J41") (unit 1)
+          (reference "J2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 53.34 144.78 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid afb7044c-90f9-4143-907d-c02b9f06faa7)
+    (property "Reference" "#PWR046" (at 46.99 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 49.53 144.78 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 53.34 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 4944ccc0-7dae-467b-a09e-e75dffa08c69))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -4758,7 +4353,7 @@
     (property "Value" "22k" (at 367.03 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 362.712 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 362.712 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 364.49 86.36 0)
@@ -4767,7 +4362,7 @@
     (pin "1" (uuid 3c9784de-2307-4cf0-a5b3-c7d79b11c139))
     (pin "2" (uuid d4321399-677b-4a57-9e09-37ee9668f99c))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R34") (unit 1)
         )
@@ -4794,43 +4389,9 @@
     (pin "2" (uuid 162526c9-07e3-4967-8a23-647b7744914b))
     (pin "3" (uuid 404c2925-4981-40dc-a17d-a9c323496b83))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector_Generic:Conn_01x10") (at 60.96 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b4429df4-6a9b-44b9-9d86-670e46492ad5)
-    (property "Reference" "J42" (at 63.5 120.65 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_01x10" (at 63.5 123.19 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" (at 60.96 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 60.96 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0c1798b3-4b36-4c2e-9b39-943a1c7a29ad))
-    (pin "10" (uuid e110f80c-8d92-4df1-8f27-3cfaba656639))
-    (pin "2" (uuid 29606bea-4279-4a2d-9dd3-921f0b428f44))
-    (pin "5" (uuid 8cf136b6-e615-47eb-92fb-f9c62028520e))
-    (pin "6" (uuid a8826fbe-fda8-4879-9f71-3fe541dbfa31))
-    (pin "7" (uuid 5e35947d-0f3c-41ce-ba5d-5b6d46f2019b))
-    (pin "3" (uuid db2eb00f-3f1e-4322-ae35-a278f4aa4ec2))
-    (pin "4" (uuid c320a7b8-3728-469a-9a22-65292a941dfa))
-    (pin "8" (uuid 09edb1c3-5dc5-4445-8105-40526040d11e))
-    (pin "9" (uuid 96d706e8-cab5-425a-b0e2-2da26d1de783))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "J42") (unit 1)
         )
       )
     )
@@ -4860,7 +4421,7 @@
     (pin "4" (uuid c161ebfa-e33b-4785-bafb-65d5e393073c))
     (pin "8" (uuid a141b3ac-3b99-4085-b164-ae9a15b65a00))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "U1") (unit 3)
         )
@@ -4877,7 +4438,7 @@
     (property "Value" "27k" (at 270.51 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 270.51 67.818 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 270.51 67.818 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 270.51 66.04 0)
@@ -4886,7 +4447,7 @@
     (pin "1" (uuid 402c0b0e-9687-4396-b550-f3156f7b261d))
     (pin "2" (uuid 7f2d993f-f3a4-43bf-8978-d98f6a5706fc))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R25") (unit 1)
         )
@@ -4912,7 +4473,7 @@
     (pin "1" (uuid 030028f3-d62b-4e2b-b5d4-28602fcd6f7a))
     (pin "2" (uuid 48e6ba10-bc2e-42ae-b518-110e656994c3))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C10") (unit 1)
         )
@@ -4929,7 +4490,7 @@
     (property "Value" "10k" (at 448.31 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 448.31 67.818 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 448.31 67.818 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 448.31 66.04 0)
@@ -4938,7 +4499,7 @@
     (pin "1" (uuid 8f313fe5-e03f-4629-950b-7f1cf6df3e95))
     (pin "2" (uuid 5e1e49c4-2aca-4303-845d-e0305ecbaa45))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R42") (unit 1)
         )
@@ -4946,28 +4507,26 @@
     )
   )
 
-  (symbol (lib_id "Device:R_Potentiometer") (at 114.3 158.75 0) (unit 1)
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 53.34 78.74 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ba0ee3bd-6021-4e82-896f-66bb528dbe8f)
-    (property "Reference" "RV39" (at 111.76 157.48 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "Shape" (at 111.76 160.02 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" (at 114.3 158.75 0)
+    (uuid ba0581b8-473b-48f2-95d2-242aee874f0b)
+    (property "Reference" "#PWR057" (at 46.99 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 114.3 158.75 0)
+    (property "Value" "GND" (at 49.53 78.74 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 53.34 78.74 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "3" (uuid a66d2a5f-37e9-4e9d-9ada-69f1a6f1c205))
-    (pin "2" (uuid 1e3f02e4-22f4-4cb1-a54e-c55ef62207aa))
-    (pin "1" (uuid 0bf23e4f-31aa-4b80-b26c-7ad2f6d060b7))
+    (property "Datasheet" "" (at 53.34 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9e53da6f-e38b-4be0-872b-9ab89afc9b02))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "RV39") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -4990,60 +4549,9 @@
     )
     (pin "1" (uuid 0e80ecff-b5f1-4bfe-8dea-744bb510b4f0))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0117") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 303.53 121.92 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid beceefce-2841-400e-9c60-ae3c578641e3)
-    (property "Reference" "#PWR058" (at 297.18 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 299.72 121.92 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (at 303.53 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 303.53 121.92 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4c384b2f-0b17-4808-b05f-229c1b01d7c1))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR058") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R") (at 125.73 113.03 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c58ec395-5315-4667-83e2-1dbb51086495)
-    (property "Reference" "R44" (at 125.73 106.68 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "270k" (at 125.73 109.22 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 125.73 114.808 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 125.73 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 40021fc0-2673-40b1-804e-6dd98ec11202))
-    (pin "2" (uuid 2f5acd07-d607-42f4-bcd7-8d60a593201c))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "R44") (unit 1)
         )
       )
     )
@@ -5058,7 +4566,7 @@
     (property "Value" "120k" (at 316.23 54.61 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 316.23 60.198 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 316.23 60.198 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 316.23 58.42 0)
@@ -5067,7 +4575,7 @@
     (pin "1" (uuid 4f7e4b09-ac57-4a60-aa85-6431c43f4adc))
     (pin "2" (uuid a93a7f89-4bd8-42dd-a341-a9a2741614ac))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R30") (unit 1)
         )
@@ -5075,35 +4583,26 @@
     )
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x10") (at 60.96 153.67 0) (unit 1)
+  (symbol (lib_id "power:-12V") (at 53.34 128.27 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ca3f54a3-739e-4b28-a037-23d07c138660)
-    (property "Reference" "J43" (at 63.5 153.67 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_01x10" (at 63.5 156.21 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" (at 60.96 153.67 0)
+    (uuid c93516a6-81a8-4fdb-a0e8-3f3adb9dbf4a)
+    (property "Reference" "#PWR067" (at 50.8 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 60.96 153.67 0)
+    (property "Value" "-12V" (at 49.53 128.27 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 53.34 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4acea24c-cad2-40c9-bb90-fc85f4a6b761))
-    (pin "10" (uuid fa651285-684a-4b98-abeb-d3ab0295710c))
-    (pin "2" (uuid 15173141-ebed-4672-bb97-3b82435cae3b))
-    (pin "5" (uuid 5e39dc2b-c6e5-4847-8b44-636de0f22819))
-    (pin "6" (uuid 5ee4dbb8-68f4-47a5-bb20-da44530d6be5))
-    (pin "7" (uuid 3dabeede-9a49-47d9-a60e-c2f0024962c8))
-    (pin "3" (uuid 826e04e6-6524-4cce-aafe-425d6fe3ddae))
-    (pin "4" (uuid 5be46153-11a2-4137-a6da-36cb661f02aa))
-    (pin "8" (uuid e1f44cb4-7063-4b4b-b152-89b430f629cc))
-    (pin "9" (uuid e332e178-346f-43f5-9773-b733f3af4875))
+    (property "Datasheet" "" (at 53.34 128.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 77e0b6bb-864b-4f84-b41b-1876f9570429))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "J43") (unit 1)
+          (reference "#PWR067") (unit 1)
         )
       )
     )
@@ -5128,7 +4627,7 @@
     (pin "2" (uuid 45b49f3e-086c-403a-a537-7481c0a6daa5))
     (pin "3" (uuid 9a1acb9f-7e56-45e3-b03c-4b211cbc0d88))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q5") (unit 1)
         )
@@ -5154,7 +4653,7 @@
     (pin "1" (uuid 66c03b75-20bb-45be-b527-cc34a9d36e8b))
     (pin "2" (uuid 0ac4011e-3b88-4bed-a32c-2c6e10c82a2a))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "C3") (unit 1)
         )
@@ -5171,7 +4670,7 @@
     (property "Value" "27k" (at 196.85 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 196.85 67.818 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 196.85 67.818 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 196.85 66.04 0)
@@ -5180,7 +4679,7 @@
     (pin "1" (uuid 1f146a57-0971-478e-9831-d9d668a18c65))
     (pin "2" (uuid 9b16de72-c2fb-47f0-b3bc-6000281cb3e4))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R19") (unit 1)
         )
@@ -5197,7 +4696,7 @@
     (property "Value" "150k" (at 151.13 124.46 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 151.13 130.048 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 151.13 130.048 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 151.13 128.27 0)
@@ -5206,7 +4705,7 @@
     (pin "1" (uuid 3f7921de-fd77-4fe5-a809-0ee54cf9174c))
     (pin "2" (uuid c5796d55-b425-4648-b289-1f7be8da97ae))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R14") (unit 1)
         )
@@ -5233,7 +4732,7 @@
     (pin "2" (uuid 9fe034e2-e28e-4ea8-87b9-445b76601b09))
     (pin "3" (uuid de557ef9-ddc2-4a3e-86c1-74455c320604))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q2") (unit 1)
         )
@@ -5250,7 +4749,7 @@
     (property "Value" "10k" (at 300.99 62.23 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 300.99 67.818 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 300.99 67.818 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 300.99 66.04 0)
@@ -5259,9 +4758,34 @@
     (pin "1" (uuid 8b38a601-67dd-4513-a2de-fbed370b013f))
     (pin "2" (uuid c2802cfc-d960-4d66-b399-5e94c7db056f))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R29") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+12V") (at 53.34 125.73 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid dc9f98f8-b44e-4a3c-96db-0f21b6a08497)
+    (property "Reference" "#PWR068" (at 57.15 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 49.53 125.73 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 53.34 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1e755c9a-ed4e-4564-a4f7-08d3dd6f3c62))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR068") (unit 1)
         )
       )
     )
@@ -5284,7 +4808,7 @@
     )
     (pin "1" (uuid 1d3f5b50-9c41-41f6-afbb-574848ab6c07))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR039") (unit 1)
         )
@@ -5301,7 +4825,7 @@
     (property "Value" "22k" (at 293.37 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 289.052 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 289.052 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 290.83 86.36 0)
@@ -5310,7 +4834,7 @@
     (pin "1" (uuid 1da77095-6c7d-4dcf-8b52-5ac60d7d6f12))
     (pin "2" (uuid 7ed88149-6670-4ac7-90a1-75ca0ef28473))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R28") (unit 1)
         )
@@ -5327,7 +4851,7 @@
     (property "Value" "22k" (at 367.03 46.9899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 362.712 45.72 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 362.712 45.72 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 364.49 45.72 0)
@@ -5336,7 +4860,7 @@
     (pin "1" (uuid c825ba8e-5608-462c-9f67-df3edbeddf4d))
     (pin "2" (uuid fbbba128-d525-451f-9774-946b02b94bd1))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R33") (unit 1)
         )
@@ -5353,7 +4877,7 @@
     (property "Value" "100k" (at 168.91 133.35 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 168.91 138.938 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 168.91 138.938 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 168.91 137.16 0)
@@ -5362,7 +4886,7 @@
     (pin "1" (uuid e64cdd91-8ae3-4cb6-913a-8a05bf61f40e))
     (pin "2" (uuid cdb6e0d0-8801-4f15-a6b1-7a2435f40983))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R16") (unit 1)
         )
@@ -5387,9 +4911,34 @@
     )
     (pin "1" (uuid 122e99c3-537d-47a4-ba5b-174c9c37f49a))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0118") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 53.34 62.23 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e3438a3e-6eb2-4907-bba7-69b747b33d6f)
+    (property "Reference" "#PWR065" (at 46.99 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 49.53 62.23 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 53.34 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 62.23 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b60c6afa-d1bd-48cc-887f-abfb8cb334fc))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR065") (unit 1)
         )
       )
     )
@@ -5412,7 +4961,7 @@
     )
     (pin "1" (uuid 7d2e340a-22d2-4298-94d9-04bac4102b61))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR043") (unit 1)
         )
@@ -5437,7 +4986,7 @@
     )
     (pin "1" (uuid 6a7beeda-fd39-44e6-a81f-93ab085a3aed))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0122") (unit 1)
         )
@@ -5454,7 +5003,7 @@
     (property "Value" "1.5k" (at 177.8 146.05 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 173.482 144.78 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 173.482 144.78 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 175.26 144.78 0)
@@ -5463,9 +5012,34 @@
     (pin "1" (uuid fb58e90f-588c-4495-889f-35c65320807f))
     (pin "2" (uuid b5108100-f24f-4aa8-88cf-a961cba845d1))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R17") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:-12V") (at 53.34 99.06 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ecab2cee-9c81-4d30-897f-a1758e6d8861)
+    (property "Reference" "#PWR066" (at 50.8 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "-12V" (at 49.53 99.06 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 53.34 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 53.34 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ac6612a6-6876-4be4-bb76-00410d007954))
+    (instances
+      (project "YuSynth_Metalizer_main"
+        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
+          (reference "#PWR066") (unit 1)
         )
       )
     )
@@ -5480,7 +5054,7 @@
     (property "Value" "22k" (at 219.71 46.9899 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 215.392 45.72 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 215.392 45.72 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 217.17 45.72 0)
@@ -5489,7 +5063,7 @@
     (pin "1" (uuid ccfd998f-b30b-4061-9b45-75292228c6b9))
     (pin "2" (uuid 169d2dbd-042a-4136-a1c1-b6825b204898))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R21") (unit 1)
         )
@@ -5527,7 +5101,7 @@
     (pin "11" (uuid 97f53235-17b3-41ee-a004-9c6f6b37cbb9))
     (pin "4" (uuid 8fd8e69a-b940-4bf9-9ff1-298a457207b2))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "U2") (unit 1)
         )
@@ -5552,34 +5126,9 @@
     )
     (pin "1" (uuid 213fc104-788b-4da9-a9cb-2cae36f28409))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR0112") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:-12V") (at 303.53 130.81 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f260bd89-3874-4b6e-b468-0e293ecc17f0)
-    (property "Reference" "#PWR056" (at 300.99 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "-12V" (at 299.72 130.81 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 303.53 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 303.53 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid bd8d1fdb-9dfb-4e63-8421-1dbaa8a061fe))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "#PWR056") (unit 1)
         )
       )
     )
@@ -5604,7 +5153,7 @@
     (pin "2" (uuid bf8a0328-65e7-4edc-b8d9-5db3bae91260))
     (pin "3" (uuid 7b095b7b-7291-4e2c-b1cc-427e69e3084a))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q7") (unit 1)
         )
@@ -5629,36 +5178,9 @@
     )
     (pin "1" (uuid 27689345-7afa-47c2-ad79-31f5faecd269))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR054") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Potentiometer") (at 114.3 113.03 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f83a4884-efb5-4a66-b266-cbcecf0c4777)
-    (property "Reference" "RV37" (at 111.76 111.76 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "CV1" (at 111.76 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Potentiometer_THT:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical" (at 114.3 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 114.3 113.03 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "3" (uuid 5ae3710b-7119-4797-bf64-4a9f24d9883e))
-    (pin "2" (uuid d563ad9e-6c5a-4b59-b669-95310a76b8c5))
-    (pin "1" (uuid 176ea923-e285-4350-8f81-5205fe31a096))
-    (instances
-      (project "YuSynth_Metalizer"
-        (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
-          (reference "RV37") (unit 1)
         )
       )
     )
@@ -5683,7 +5205,7 @@
     (pin "2" (uuid 35539a81-4a9d-4848-a005-aa8ae62c1632))
     (pin "3" (uuid aaac5035-8b9d-45e2-9644-d45ef354fecb))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "Q12") (unit 1)
         )
@@ -5708,7 +5230,7 @@
     )
     (pin "1" (uuid 07997dc5-9f9d-4b27-8394-dc284eac2137))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "#PWR040") (unit 1)
         )
@@ -5725,7 +5247,7 @@
     (property "Value" "22k" (at 440.69 87.6299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" (at 436.372 86.36 90)
+    (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (at 436.372 86.36 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 438.15 86.36 0)
@@ -5734,7 +5256,7 @@
     (pin "1" (uuid 595d6d48-5d8f-4d57-b9d3-f436ca15a380))
     (pin "2" (uuid 613eeb23-607f-4457-a487-d6f5e431830b))
     (instances
-      (project "YuSynth_Metalizer"
+      (project "YuSynth_Metalizer_main"
         (path "/0dba5d8c-be00-4baf-a6be-5f144c6d386c"
           (reference "R40") (unit 1)
         )
